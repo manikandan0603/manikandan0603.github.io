@@ -1,0 +1,520 @@
+@font-face {
+  font-family: 'KozGoPr6N-Bold';
+  src: url("fonts/KozGoPr6N-Bold-AlphaNum.eot");
+  src: url("fonts/KozGoPr6N-Bold-AlphaNum.eot") format("embedded-opentype"),
+  url("../fonts/KozGoPr6N-Bold-AlphaNum.woff?-6cyc7d") format("woff"),
+  url("../fonts/KozGoPr6N-Bold-AlphaNum.ttf?-6cyc7d") format("truetype"),
+  url("../fonts/KozGoPr6N-Bold-AlphaNum.svg?-6cyc7d#KozGoPr6N-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'KozGoPr6N-Medium';
+  src: url("fonts/KozGoPr6N-Medium-AlphaNum.eot");
+  src: url("fonts/KozGoPr6N-Medium-AlphaNum.eot") format("embedded-opentype"),
+  url("../fonts/KozGoPr6N-Medium-AlphaNum.woff?-6cyc7d") format("woff"),
+  url("../fonts/KozGoPr6N-Medium-AlphaNum.ttf?-6cyc7d") format("truetype"),
+  url("../fonts/KozGoPr6N-Medium-AlphaNum.svg?-6cyc7d#KozGoPr6N-Medium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'KozGoPr6N-Regular';
+  src: url("fonts/KozGoPr6N-Regular-AlphaNum.eot");
+  src: url("fonts/KozGoPr6N-Regular-AlphaNum.eot") format("embedded-opentype"),
+  url("../fonts/KozGoPr6N-Regular-AlphaNum.woff?-6cyc7d") format("woff"),
+  url("../fonts/KozGoPr6N-Regular-AlphaNum.ttf?-6cyc7d") format("truetype"),
+  url("../fonts/KozGoPr6N-Regular-AlphaNum.svg?-6cyc7d#KozGoPr6N-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+	margin:0px;
+	padding:0px
+}
+form, ul, li{
+	margin:0px;
+	padding:0px
+}
+a{
+	text-decoration:none; outline:none;
+}
+img{
+	border:0px;
+	max-width:100%;
+}
+html{
+	width:100%;
+	padding:0 0 0 0;
+}
+body{
+  font-size:15px;
+  font-family:KozGoPr6N;
+  margin:0 auto;
+}
+h1, h2, h3, h4, h5, h6{
+  margin:0;
+}
+#logo, .logo{
+  float:left;
+  position: relative;
+  z-index: 99;
+  bottom:-6px;
+}
+.logo{
+  margin-top:8px;
+  margin-left:40px;
+} 
+.menu_inner{
+  margin-top:30px;
+  text-align:center;
+}
+.header{
+  position:fixed;
+  z-index:9999;
+  width:100%;
+  top:0px;
+  background-color:#fff;
+  background: rgba(255,255,255,0.9);
+}
+.header-right{
+  margin-top:30px;
+}
+.header-right ul{
+  float:right;
+}
+.menu_inner li{
+  float:left;
+  list-style:none;
+  width:20%;  
+}
+.menu_inner li a, .header-right li a{
+  font-size:1em;
+  color:#414040;
+  font-family:KozGoPr6N-Regular;
+}
+.menu_inner li a:hover, .header-right li a:hover{
+  text-decoration:none;
+}
+.header-right li:before{
+  margin-right: 11px;
+  color:#959595;
+}
+.banner{
+  top: -29px;
+  position: relative;
+  font-family:KozGoPr6N-Regular;
+  margin-top:84px;
+}
+.banner li{
+  position: relative; 
+} 
+.banner li .more_button{
+  position: absolute;
+  bottom: 80px;
+  font-size: 1.8em;
+  left: 40%;
+  padding: 14px 48px;
+}
+.banner-right{
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+  width: 33%;
+  text-align: right;
+  right: 27px;
+  color:#fff;
+}
+@media (max-width:1024px) {
+ .banner-right {
+   width:100%;
+   bottom:180px;
+ }
+}
+#main-banner { position:relative}
+.owl-theme .owl-controls {
+text-align: right;
+position: absolute;
+right: 0;
+bottom:10px;
+}
+.banner-right h2{
+  font-size:2.7em;
+} 
+.header h1{
+  float:left;
+}
+.header-right{
+  float:right;
+}
+.header-right a{
+  text-decoration:none;
+  color:#6e6e6e;
+}
+.banner img{
+  max-width:100%;
+}
+.blue-strip{
+  text-align:center;
+  background-color:#1870de;
+  color:#fff;
+  padding:10px;
+  margin-top: -30px;
+}
+.select-box button{
+  background-color:#022e91;
+  margin-right:30px;
+}
+.white-strip,.use-nab,.customers h3,.customers p{
+  background-color:#fff;
+  text-align:center;
+  color:#989898;
+  padding:17px 0 7px 0;
+}
+.white-strip h3,.use-nab h3,.customers h3{
+  font-weight:bold;
+  font-family: KozGoPr6N-Bold;
+}
+.white-strip p{
+  font-family:KozGoPr6N-Regular;
+  font-size: 0.8em;
+}
+.pick-car-img,.terms-img,.offer-img{ 
+  font-size:6em;
+  text-align:center;
+}
+.pick-car-right,.terms-right,.offer-right{ 
+  padding:10px; 
+}
+.pick-car{
+  background-color:#3e3e3e;
+  color:#fff;
+}
+.terms{
+  background-color:#fcb042;
+  color:#fff;
+}
+.offers{
+  background-color:#00855c;
+  color:#fff;
+}
+.man, .gloves, .best-price{
+  border:2px solid #b8b8b8;
+  border-left:none;
+  border-top:none;
+  text-align:center;
+  background:#fff;
+}
+.man h3{
+  padding:20px;
+}
+.man p{
+  background-color:#3e3e3e;
+  color:#fff;
+  padding:20px;
+  margin-bottom: 0;
+}
+.gloves h3{
+  color:#dfb46e;
+  padding:20px;
+}
+.gloves p{
+  background-color:#fcb042;
+  color:#fff;
+  padding:10px;
+  margin-bottom: 0;
+}
+.best-price h3{
+  color:#409c7d;
+  padding:20px;
+}
+.best-price p{
+  background-color:#00855c;
+  padding:10px;
+  color:#fff;
+  margin-bottom: 0;
+}
+.cust-inner{
+  border:1px solid #b8b8b8; 
+  margin-bottom:15px;
+  border-right:5px solid #196edf;
+  font-family:KozGoPr6N-Regular;
+}
+.dr-blue-border{
+  border-right:5px solid #002d90;
+}
+.lt-green-border{
+  border-right:5px solid #34ac7d;
+}
+.dr-green-border{
+  border-right:5px solid #00855c;
+}
+
+.slide-buttons{
+  position: absolute;
+  width: 100%;
+}
+.slide-buttons a{
+  font-size:2.6em;
+  float:right;
+  margin-right:10px;
+  margin-top:130px;
+  cursor:pointer;
+}
+#testimonial .owl-pagination {display:none}
+.t-item {
+ padding:0 5px;
+}
+.slide-buttons a:first-child{
+  float:left;
+  margin-right:0px;
+  margin-left:10px;
+}
+.cust-inner-left{
+  float:left;
+  width:25%;
+}
+.cust-inner-right{
+  background:url(../images/arrow-right.png) no-repeat left 21px;
+  width:75%;
+  float:left;
+  text-align: center;
+  margin-left:-9px;
+}
+.cust-inner-right blockquote{
+  border:none;
+  padding:0;
+  padding-top:50px;
+  max-width:324px;
+  margin:0 auto;
+  font-size: 0.9em;
+}
+.cust-inner-right blockquote cite{
+  color:#a0a0a0;
+  display:block;  
+  font-family:KozGoPr6N-Regular;
+  font-style:normal;
+}
+.social-website{
+  background-color:#3e3e3e;
+  text-align:center;
+}
+.social-website h3{
+  color:#fff;
+  font-family:KozGoPr6N-Regular;
+  font-size:0.9em;
+  margin-bottom:15px;
+}
+.social-website img{
+  max-width:100%;
+}
+.social-website li{
+  float:left;
+}
+.buy-car img{
+  max-width:100%;
+}
+.footer{
+  text-align:center;
+}
+.footer li{
+  list-style-type: none;
+}
+.offers, .terms, .pick-car{
+  padding-top:30px;
+  padding-bottom:30px;
+  position: relative;
+} 
+.man p, .gloves p, .best-price p{
+  padding:20px 31px;
+}
+.icon_left{
+  text-align:center;
+}
+.step_right p{
+  padding: 0;
+  margin-top: 10px;
+  font-family:KozGoPr6N-Regular;
+}
+.use-nab{
+  border-bottom:4px solid #c3c3c3;
+  padding-bottom:20px;
+}
+.privacy{
+  background:#e5e5e5; 
+  font-family:KozGoPr6N-Regular;
+}
+.privacy .box {
+  margin-top:48px;
+  margin-bottom:48px;
+}
+.tabs{
+  float: left;
+  margin-top:-47px;
+  position: relative;
+  z-index: 999;
+  margin-left: -19px;
+}
+.tabs li{
+  float:left;
+  list-style:none; 
+}
+.tabs li a{
+  border-radius: 0;
+  font-size:1.1em;
+  padding:7px 37px;
+  font-weight:bold;
+  border: none;
+  font-family:KozGoPr6N-Bold;
+}
+.customers{
+  padding-top: 20px;
+  margin-bottom: 35px;
+}
+.customers p{
+  padding-top: 0;
+  font-family:KozGoPr6N-Regular;
+  margin-bottom: 30px;
+}
+.tabs li a.btn-primary{
+  background:#196edf;
+}
+.blue-strip h3{
+  margin-top:29px;
+  font-size:2.1em;
+  margin-bottom:10px;
+  font-weight: bold;
+  font-family:KozGoPr6N-Bold;
+}
+.blue-strip  .start{
+ font-size:1.2em;
+ margin-top:20px;
+}
+.social-website{
+  padding-top:20px;
+  padding-bottom:20px;
+}
+.social-website {
+  text-align:center;
+}
+.social-website  li{
+  list-style:none;
+  display:inline;
+  margin:0 26px;
+  margin-bottom:40px; 
+}
+.social-website  li.center{
+ width:60%;
+}
+.buy-car{
+  background:url(../images/free.png) no-repeat bottom;
+  background-size:cover;
+  height:343px;
+}
+.buy-car-inner{
+  margin-top: 58px;
+  color:#fff;
+  margin-left: 61px;
+  font-family:KozGoPr6N-Regular;
+}
+.buy-car-inner p{
+  margin-top:7px;
+}
+.gt_more{
+  font-size: 23px;
+  padding: 16px 42px;
+  background:#f7941d;
+  margin-top:10px;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+  box-shadow:3px 3px 5px 0px rgba(0,0,0,0.5);
+}
+.footer-left {
+  text-align:left;
+  margin-top:30px;
+  padding-left:20px;
+  margin-bottom:10px;
+}
+.footer-left h3{
+  font-size:1em; 
+  color:#424242;
+  font-weight:bold;
+  margin-bottom:2px;
+  font-family:KozGoPr6N-Bold;
+}
+.footer-left li a{
+  color:#959595;
+  font-family:KozGoPr6N-Regular;
+}
+.footer-left li a:hover{
+  text-decoration:underline;
+}
+.footer-left .row .col-md-4{
+  margin-bottom:20px;
+}
+.copy{
+  text-align:right;
+  margin-bottom:10px;
+  color:#969696;
+  font-size:0.9em;
+  font-family:KozGoPr6N-Regular;
+}
+.social-icons{
+  font-size:4em;
+  margin-top:10px;
+  text-align:right;
+}
+.by-make .btn-group .btn{
+  padding: 10px 30px;
+  font-size: 1em;
+  font-family:KozGoPr6N-Regular;
+}
+.car_sub{
+  background:url(../images/arr-rs.png) no-repeat;
+  border:none;
+  text-indent:100px;
+  width:41px;
+  height:41px;
+}
+.line{
+  width:3px;
+  height:35%;
+  background: #fff; 
+  position: absolute; 
+  color:#fff; 
+  bottom:0; 
+  left:267px;
+}
+@media (max-width:1024px) {
+  .line, .terms-line, .offers-line {
+     display:none;
+     }
+}
+.terms-line,.offers-line{
+  width:3px;
+  height:35%;
+  background: #fff; 
+  position: absolute; 
+  color:#fff; 
+  top:0; 
+  left:267px;
+}
+.man img,.gloves img,.best-price img{
+  margin-top:45px;
+}
+.blue-strip p{
+  margin-bottom:48px;
+  font-family:KozGoPr6N-Regular;
+}
+.pick-car h4,.terms h4,.offers h4{
+  font-weight:bold;
+  font-family: 'KozGoPr6N-Bold';
+}
+.pick-car h2,.terms h2,.offers h2{
+  font-family:KozGoPr6N-Regular;
+}
+.man p,.gloves p,.best-price p{
+  font-size:0.9em;
+}
+
